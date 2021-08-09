@@ -124,7 +124,7 @@
 	// Main.
 	var $main = $('#main');
 
-	// Thumbs.
+	// Thumbs. REMOVE IF NOT WORKING TMR
 		$main.children('.illusts > .thumb').each(function() {
 
 			var	$this = $(this),
