@@ -118,6 +118,37 @@
 	// Scrolly.
 		$('.scrolly').scrolly({
 			speed: 1000
+			
+		});
+	
+	// Main.
+	var $main = $('#main');
+
+	// Thumbs.
+		$main.children('.illusts > .thumb').each(function() {
+
+			var	$this = $(this),
+				$image = $this.find('.image'), $image_img = $image.children('img'),
+				x;
+
+			// No image? Bail.
+				if ($image.length == 0)
+					return;
+
+			// Image.
+			// This sets the background of the "image" <span> to the image pointed to by its child
+			// <img> (which is then hidden). Gives us way more flexibility.
+
+				// Set background.
+					$image.css('background-image', 'url(' + $image_img.attr('src') + ')');
+
+				// Set background position.
+					if (x = $image_img.data('position'))
+						$image.css('background-position', x);
+
+				// Hide original img.
+					$image_img.hide();
+
 		});
 
 })(jQuery);
