@@ -3231,7 +3231,7 @@ input, select, textarea {
 		background-color: #f7f7f7;
 		border-top-left-radius: 0.25em;
 		border-top-right-radius: 0.25em;
-		display: flexbox;
+		display: none;
 		cursor: default;
 		text-align: center;
 	}
@@ -3330,9 +3330,17 @@ input, select, textarea {
 					font-size: 0.9em;
 				}
 
-		@media screen and (max-width: 980px) {
 
-			#nav {
+		/* @media screen and (min-width: 73px) {
+
+			#nav.alt {
+				display: flex;
+			}
+		}
+		
+		@media screen and (max-width: 736px) {
+
+			#nav.alt {
 				display: none;
 			}
 
@@ -3340,7 +3348,7 @@ input, select, textarea {
 					padding-top: 0;
 				}
 
-		}
+		} */
 
 		
 /* Main */
@@ -3860,7 +3868,7 @@ input, select, textarea {
 				}
 
 				#main > .posts > article .image {
-					max-width: 0rem;
+					max-width: 40rem;
 					margin-left: auto;
 					margin-right: auto;
 				}
@@ -4582,8 +4590,8 @@ input, select, textarea {
 		transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 		display: none;
 		position: fixed;
-		top: 0.75rem;
-		right: 0.75rem;
+		top: 0.0rem;
+		right: 0.0rem;
 		border: 0;
 		color: #ffffff;
 		font-family: "Source Sans Pro", Helvetica, sans-serif;
@@ -4792,7 +4800,7 @@ input, select, textarea {
 			#navPanel ul li a {
 				border-bottom: 0;
 				display: block;
-				font-family: "Source Sans Pro", Helvetica, sans-serif;
+				font-family: "Source Sans	 Pro", Helvetica, sans-serif;
 				font-size: 0.9rem;
 				font-size: 0.9rem;
 				font-weight: 900;

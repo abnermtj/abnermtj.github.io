@@ -36,7 +36,7 @@
 	$navPanelToggle = $(
 		'<a href="#navPanel" id="navPanelToggle" class = "alt"></a>'
 	)
-	.appendTo($wrapper);
+	.appendTo($main);
 
 		// Panel.
 		$navPanel = $(
@@ -66,6 +66,9 @@
 
 			breakpoints.on('>medium', function() {
 
+				// Renmove nav bar on zoom
+				$nav.addClass('alt');
+
 				// NavPanel -> Nav.
 					$navContent.appendTo($nav);
 
@@ -77,6 +80,7 @@
 
 			breakpoints.on('<=medium', function() {
 
+				$nav.removeClass('alt');
 				// Nav -> NavPanel.
 					$navContent.appendTo($navPanelInner);
 
