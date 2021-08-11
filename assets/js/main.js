@@ -8,13 +8,16 @@
 
 	var	$window = $(window),
 		$body = $('body'),
-		$main = $('#main');
+		$main = $('#main'),
+		$nav = $('#nav'),
+		$wrapper = $('#wrapper'),
+		$navPanelToggle, $navPanel, $navPanelInner;
 
 	// Breakpoints.
 		breakpoints({
 			xlarge:   [ '1281px',  '1680px' ],
 			large:    [ '981px',   '1280px' ],
-			medium:   [ '737px',   '980px'  ],
+			medium:   [ '736px',   '980px'  ],
 			small:    [ '481px',   '736px'  ],
 			xsmall:   [ '361px',   '480px'  ],
 			xxsmall:  [ null,      '360px'  ]
@@ -26,6 +29,68 @@
 				$body.removeClass('is-preload');
 			}, 100);
 		});
+
+		
+
+	// Toggle.
+	$navPanelToggle = $(
+		'<a href="#navPanel" id="navPanelToggle" class = "alt"></a>'
+	)
+	.appendTo($wrapper);
+
+		// Panel.
+		$navPanel = $(
+			'<div id="navPanel">' +
+				'<nav>' +
+				'</nav>' +
+				'<a href="#navPanel" class="close"></a>' +
+			'</div>'
+		)
+			.appendTo($body)
+			.panel({
+				delay: 500,
+				hideOnClick: true,
+				hideOnSwipe: true,
+				resetScroll: true,
+				resetForms: true,
+				side: 'right',
+				target: $body,
+				visibleClass: 'is-navPanel-visible'
+			});
+
+		// Get inner.
+			$navPanelInner = $navPanel.children('nav');
+
+		// Move nav content on breakpoint change.
+			var $navContent = $nav.children();
+
+			breakpoints.on('>medium', function() {
+
+				// NavPanel -> Nav.
+					$navContent.appendTo($nav);
+
+				// Flip icon classes.
+					$nav.find('.icons, .icon')
+						.removeClass('alt');
+
+			});
+
+			breakpoints.on('<=medium', function() {
+
+				// Nav -> NavPanel.
+					$navContent.appendTo($navPanelInner);
+
+				// Flip icon classes.
+					$navPanelInner.find('.icons, .icon')
+						.addClass('alt');
+
+			});
+
+		// Hack: Disable transitions on WP.
+			if (browser.os == 'wp'
+			&&	browser.osVersion < 10)
+				$navPanel
+					.css('transition', 'none');
 
 	// Nav.
 		var $nav = $('#nav');
@@ -182,5 +247,5 @@
 		onPopupClose:				null,			// Called when popup closes
 		onPopupOpen:				null			// Called when popup opens
 	});
-
+	
 })(jQuery);
