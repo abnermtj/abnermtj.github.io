@@ -90,6 +90,7 @@
 
 			});
 
+			
 		// Hack: Disable transitions on WP.
 			if (browser.os == 'wp'
 			&&	browser.osVersion < 10)
