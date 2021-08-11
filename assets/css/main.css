@@ -3317,6 +3317,9 @@ input, select, textarea {
 			border-top-left-radius: 0;
 			border-top-right-radius: 0;
 			z-index: 10000;
+			display: flex;
+			justify-content: center;
+
 		}
 
 			#nav.alt ul li {
@@ -4607,13 +4610,13 @@ input, select, textarea {
 
 		#navPanelToggle:before {
 			content: '\f0c9';
-			margin-right: 0.5rem;
+			margin-right: 0rem;
 		}
 
 		#navPanelToggle.alt {
 			background-color: rgba(255, 255, 255, 0.875);
 			box-shadow: 0 0.125rem 0.75rem 0 rgba(30, 37, 45, 0.25);
-			color: #212931;
+			color: #636363;
 		}
 
 			#navPanelToggle.alt:hover {
@@ -4774,14 +4777,33 @@ input, select, textarea {
 
 	}
 
-	#navPanel ul li a {
-		border-bottom: 0;
-		display: block;
-		font-family: "Source Sans Pro", Helvetica, sans-serif;
-		font-size: 0.9rem;
-		font-size: 0.9rem;
-		font-weight: 900;
-		letter-spacing: 0.075em;
-		padding: 0.75rem 0;
-		text-transform: uppercase;
+	#navPanel ul{
+		list-style-type: none;		
 	}
+	
+		#navPanel .links li {
+			border-top: solid 2px #eeeeee;
+			
+		}
+			#navPanel .links li:first-child {
+				border-top: solid 0;
+				
+		}
+			#navPanel ul li a {
+				border-bottom: 0;
+				display: block;
+				font-family: "Source Sans Pro", Helvetica, sans-serif;
+				font-size: 0.9rem;
+				font-size: 0.9rem;
+				font-weight: 900;
+				letter-spacing: 0.075em;
+				padding: 0.75rem 0;
+				text-transform: uppercase;
+				color: #636363;
+				
+	}
+	#navPanel ul li:first-child {
+		border-top: solid 0;
+		
+}
+
