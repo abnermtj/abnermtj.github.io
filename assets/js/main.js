@@ -193,7 +193,7 @@
 	
 	// Main.
 	var $main = $('#main');
-	var foo = $('#gallery');
+	var foo = $('#illusts');
 	foo.poptrox();
 	foo.poptrox({
 		preload:					false,			// If true, preload fullsize images in
