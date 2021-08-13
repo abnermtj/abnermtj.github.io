@@ -171,7 +171,7 @@ input, select, textarea {
 		}
 
 	strong, b {
-		font-weight: 400;
+		font-weight: 900;
 	}
 
 	em, i {
@@ -2984,7 +2984,7 @@ input, select, textarea {
 		-webkit-align-items: center;
 		-ms-align-items: center;
 		align-items: center;
-		margin: 0 0 2em 0;
+		margin: -6em 0 2em 0;
 	}
 
 		.spotlight .content {
@@ -2992,6 +2992,7 @@ input, select, textarea {
 			-webkit-flex: 1;
 			-ms-flex: 1;
 			flex: 1;
+			margin-right: 1em;
 		}
 
 			.spotlight .content > :last-child {
@@ -3662,7 +3663,7 @@ input, select, textarea {
 		}
 
 		#main > .main {
-			padding: 5em 5em 3em 5em ;
+			padding: 0em 5em 3em 5em ;
 			border-top: solid 1px #dddddd;
 		}
 
@@ -3894,14 +3895,6 @@ input, select, textarea {
 				#main > .posts > article .image:hover{
 					transition: opacity 0.2s ease-in-out;
 					opacity: .8;
-				}
-				#main > .posts > article >.image:hover > .overlay {
-					width:100%;
-					height:100%;
-					position:absolute;
-					background-color:#000;
-					opacity:0.5;
-					border-radius:30px;
 				}
 
 			@media screen and (max-width: 980px) {
@@ -4171,6 +4164,10 @@ input, select, textarea {
 
 			#main > .illusts > .thumb > p {
 				display: none;
+			}
+			#main > .illusts > .thumb .image:hover{
+				transition: opacity 0.2s ease-in-out;
+				opacity: .8;
 			}
 
 		#main > .illusts:after {
@@ -5103,3 +5100,37 @@ input, select, textarea {
 		}
 
 	}
+
+	
+#main > section.WhatIDid * {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 60%;
+		text-align: center;
+}
+#main > section.WhatIDid * {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	text-align: center;
+}
+  
+		/* text-align: center;
+		padding: 0;
+		margin: 0 0 0em 0;
+		display:inline-block;
+		align-items:center;
+		justify-content:center;
+		width:100%; */
+	}
+	/* #main > .about > article p {
+		text-align: center;
+		padding: 0;
+		margin: 0 0 0em 0;
+		display:inline-block;
+		align-items:center;
+		justify-content:center;
+		width:75%;
+	} */
