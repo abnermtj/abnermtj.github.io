@@ -3203,6 +3203,9 @@ input, select, textarea {
 		body.is-preload #header.alt > * {
 			opacity: 0;
 		}
+		body.is-preload #main > .posts > * {
+			opacity: 0;
+		}
 
 		body.is-preload #header.alt .logo {
 			-moz-transform: scale(0.8) rotate(-30deg);
@@ -4431,10 +4434,10 @@ input, select, textarea {
 			}
 
 				#main > .illusts > .thumb:nth-child(1) {
-					-moz-transition-delay: 0.65s;
-					-webkit-transition-delay: 0.65s;
-					-ms-transition-delay: 0.65s;
-					transition-delay: 0.65s;
+					-moz-transition-delay: 0.2s;
+					-webkit-transition-delay: 0.2s;
+					-ms-transition-delay: 0.2s;
+					transition-delay: 0.2s;
 				}
 
 				#main > .illusts > .thumb:nth-child(2) {
