@@ -29,8 +29,8 @@
 				$body.removeClass('is-preload');
 			}, 100);
 		});
-
-		
+	/*load a stadard footer and nav bar*/
+	$("#footer").load("footer.html");
 
 	// Toggle.
 	$navPanelToggle = $(
@@ -96,7 +96,7 @@
 			&&	browser.osVersion < 10)
 				$navPanel
 					.css('transition', 'none');
-
+	
 	// Nav.
 		var $nav = $('#nav');
 
@@ -253,4 +253,5 @@
 		onPopupOpen:				null			// Called when popup opens
 	});
 	
+
 })(jQuery);
