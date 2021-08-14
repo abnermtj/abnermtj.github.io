@@ -3418,6 +3418,9 @@ input, select, textarea {
 		background-color: #f6f9fc;
 		color: #636363;
 		border-radius: 0.25em;
+
+		max-width: calc(100% - 4em);
+		margin: 0 auto;
 	}
 
 		#main input, #main select, #main textarea {
@@ -3687,6 +3690,23 @@ input, select, textarea {
 					border-bottom-left-radius: 0;
 				}
 
+			
+		
+				@media screen and (max-width: 480px) {
+		
+					#wrapper {
+						max-width: calc(100% - 4em);
+					}
+		
+				}
+		
+				@media screen and (max-width: 360px) {
+		
+					#wrapper {
+						max-width: calc(100% -4em);
+					}
+		
+				}
 		@media screen and (max-width: 1280px) {
 
 			#main > .main {
@@ -4637,25 +4657,7 @@ input, select, textarea {
 
 	#wrapper {
 		width: 100%;
-		max-width: calc(100% - 4em);
-		margin: 0 auto;
 	}
-
-		@media screen and (max-width: 480px) {
-
-			#wrapper {
-				max-width: calc(100% - 4em);
-			}
-
-		}
-
-		@media screen and (max-width: 360px) {
-
-			#wrapper {
-				max-width: calc(100% -4em);
-			}
-
-		}
 
 		
 /* Nav Panel toggler*/
@@ -5124,7 +5126,7 @@ input, select, textarea {
 		align-items:center;
 		justify-content:center;
 		width:100%; */
-	}
+	/* } */
 	/* #main > .about > article p {
 		text-align: center;
 		padding: 0;
