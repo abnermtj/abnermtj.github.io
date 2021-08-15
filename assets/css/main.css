@@ -2653,7 +2653,7 @@ input, select, textarea {
 				display: block;
 				content: '';
 				width: 3.25em;
-				height: 2px;
+				height: 4px;
 				margin: 0.7em 0 1em 0;
 				border-radius: 2px;
 			}
@@ -2984,7 +2984,7 @@ input, select, textarea {
 		-webkit-align-items: center;
 		-ms-align-items: center;
 		align-items: center;
-		margin: -6em 0 2em 0;
+		margin: -2em 0 2em 0;
 	}
 
 		.spotlight .content {
@@ -3028,7 +3028,7 @@ input, select, textarea {
 				-webkit-flex-direction: column-reverse;
 				-ms-flex-direction: column-reverse;
 				flex-direction: column-reverse;
-				text-align: center;
+				text-align: left;
 			}
 
 				.spotlight .content {
@@ -3416,27 +3416,27 @@ input, select, textarea {
 
 	#main {
 		background-color: #f6f9fc;
-		color: #636363;
+		color: #2f2f2f;
 		border-radius: 0.25em;
 
-		max-width: calc(100% - 4em);
+		max-width: calc(100% - 20em);
 		margin: 0 auto;
 	}
 
 		#main input, #main select, #main textarea {
-			color: #636363;
+			color: #2f2f2f;
 		}
 
 		#main a:hover {
-			color: #636363;
+			color: #2f2f2f;
 		}
 
 		#main strong, #main b {
-			color: #636363;
+			color: #2f2f2f;
 		}
 
 		#main h1, #main h2, #main h3, #main h4, #main h5, #main h6 {
-			color: #636363;
+			color: #2f2f2f;
 		}
 
 		#main blockquote {
@@ -3526,7 +3526,7 @@ input, select, textarea {
 				}
 
 		#main label {
-			color: #636363;
+			color: #2f2f2f;
 		}
 
 		#main input[type="text"],
@@ -3630,11 +3630,11 @@ input, select, textarea {
 		}
 
 		#main header.major h2:after {
-			background-color: #dddddd;
-			background-image: -moz-linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0);
-			background-image: -webkit-linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0);
-			background-image: -ms-linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0);
-			background-image: linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0);
+			background-color: #f76660;
+			background-image: #f76660;
+			background-image: #f76660;
+			background-image: #f76660;
+			background-image: #f76660;
 		}
 
 		#main table tbody tr {
@@ -3666,7 +3666,7 @@ input, select, textarea {
 		}
 
 		#main > .main {
-			padding: 0em 5em 3em 5em ;
+			padding: 4em 5em 3em 5em ;
 			border-top: solid 1px #dddddd;
 		}
 
@@ -3691,9 +3691,17 @@ input, select, textarea {
 				}
 
 			
+				@media screen and (max-width: 720px) {
+				    #main {
+						max-width: calc(100% - 3em);
+					}
+		
+				}
 		
 				@media screen and (max-width: 480px) {
-		
+				    #main {
+						max-width: 100%;
+					}
 					#wrapper {
 						max-width: calc(100% - 4em);
 					}
@@ -4096,14 +4104,14 @@ input, select, textarea {
 		}
 
 			.about .image img {
-				width: 12em;
+				width: 10em;
 			}
 
 	}
 
 		.about .image {
 			border-color: #f76660;
-			border-width: .5em;
+			border-width: .4em;
 		}
 
 		#main .about .image {
@@ -4584,7 +4592,7 @@ input, select, textarea {
 		padding: 5em 5em 3em 3em ;
 		width: calc(100% + 2em);
 		/* margin: 0 0 -5em -5em; */
-		background-color: #f76660;
+		background-color: #e85f59;
 		justify-content: center;
 	}
 
@@ -4657,6 +4665,8 @@ input, select, textarea {
 
 	#wrapper {
 		width: 100%;
+		margin: 0 auto;
+		overflow: hidden
 	}
 
 		
@@ -5105,20 +5115,16 @@ input, select, textarea {
 
 	
 #main > section.WhatIDid * {
-		display: block;
-		margin-left: auto;
-		margin-right: auto;
-		width: 60%;
-		text-align: center;
-}
-#main > section.WhatIDid * {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
 	width: 100%;
-	text-align: center;
+	text-align: left;
 }
-  
+#main > section.WhatIDid h2 {
+	text-align: left;
+}
+
 		/* text-align: center;
 		padding: 0;
 		margin: 0 0 0em 0;
