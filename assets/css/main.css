@@ -3020,6 +3020,13 @@ input, select, textarea {
 				border-radius: .25em;
 				width: 79%;
 			}
+			.spotlight .content .actions {
+				-moz-justify-content: left;
+				-webkit-justify-content: left;
+				-ms-justify-content: left;
+				justify-content: left;
+				width: calc(100% + 1em);
+			}
 
 		@media screen and (max-width: 980px) {
 
@@ -3045,10 +3052,10 @@ input, select, textarea {
 					}
 
 					.spotlight .content .actions {
-						-moz-justify-content: center;
-						-webkit-justify-content: center;
-						-ms-justify-content: center;
-						justify-content: center;
+						-moz-justify-content: left;
+						-webkit-justify-content: left;
+						-ms-justify-content: left;
+						justify-content: left;
 						width: calc(100% + 1em);
 					}
 
@@ -4079,10 +4086,10 @@ input, select, textarea {
 				}
 
 				.about .content .actions {
-					-moz-justify-content: center;
-					-webkit-justify-content: center;
-					-ms-justify-content: center;
-					justify-content: center;
+					-moz-justify-content: left;
+					-webkit-justify-content: left;
+					-ms-justify-content: left;
+					justify-content: left;
 					width: calc(100% + 1em);
 				}
 
