@@ -3893,14 +3893,9 @@ input, select, textarea {
 			}
 
 			#main > .posts > * {
-				width: 50%;
+				padding: 8px;
+				width: 48%;
 			}
-
-			#main > .posts > * {
-				padding: 2rem;
-				width: 50%;
-			}
-			
 			
 			#main > .posts > article {
 				border-color: #eeeeee;
@@ -3911,6 +3906,7 @@ input, select, textarea {
 				transition: opacity 0.2s ease-in-out;
 				border: 6px solid rgb(246, 249, 252);
 				box-shadow: 0 0 3px #ccc;
+				margin-bottom: 2em;
 			}
 			
 			#main >.posts > article >  h2{
@@ -3920,12 +3916,17 @@ input, select, textarea {
 					margin-bottom: 0;
 				}
 
-				#main > .posts > article:nth-child(2n - 1) {
+				#main > .posts > article:nth-child(2n -1) {
 					border-left-width: 0;
+					margin-right: auto;
+  					margin-left: 0;
+
 				}
 
-				#main > .posts > article:nth-child(-n + 2) {
+				#main > .posts > article:nth-child(2n) {
 					border-top-width: 0;
+					margin-right: 0;
+  					margin-left: auto;
 				}
 				#main > .posts > article .image:hover{
 					transition: opacity 0.2s ease-in-out;
