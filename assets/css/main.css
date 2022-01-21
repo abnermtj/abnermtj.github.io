@@ -143,7 +143,7 @@ input, select, textarea {
 		@media screen and (max-width: 1280px) {
 
 			body, input, select, textarea {
-				font-size: 12pt;
+				font-size: 11pt;
 			}
 
 		}
@@ -3345,7 +3345,7 @@ input, select, textarea {
 			}
 
 				#nav.alt ul li a {
-					font-size: 0.85em;
+					font-size: 0.80em;
 				}
 
 
@@ -3679,6 +3679,7 @@ input, select, textarea {
 
 			#main > .main:first-child {
 				border-top: 0;
+				padding: 0em 0em 0em 0em ;
 			}
 
 			#main > .main > .image.main:first-child {
@@ -3998,17 +3999,19 @@ input, select, textarea {
 		}
 
 		#main > .about > article {
-			text-align: center;
+			text-align: left;
 			padding: 0;
 			margin: 0 0 0em 0;
-			display:inline-block;
+			font-weight: 400;
+			display: flex;
 			align-items:center;
-			justify-content:center;
+			justify-content:	center;
 			width:100%;
 		}
 		#main > .about > article p {
-			text-align: center;
+			text-align: left;
 			padding: 0;
+			font-size: 13px;
 			margin: 0 0 0em 0;
 			display:inline-block;
 			align-items:center;
@@ -4049,15 +4052,17 @@ input, select, textarea {
 		display: inline-block;
 		margin-left: 4em;
 		padding: 0.2em;
-		border-radius: 100%;
+		border-radius: 0%;
 		border: solid 1px;
-		margin: 0 0 2em 0;
+		margin: 0em 2em 2em 2em;
+		text-align: right;
 		border-color: #f76660;
 	}
 
 		.about .image img {
 			display: block;
-			border-radius: 100%;
+			border-radius: 0%;
+			text-align: right;
 			width: 12em;
 		}
 
@@ -4098,6 +4103,7 @@ input, select, textarea {
 				-ms-flex: 0 1 auto;
 				flex: 0 1 auto;
 				margin-left: 0;
+				
 				margin-bottom: 2em;
 			}
 
@@ -4110,17 +4116,18 @@ input, select, textarea {
 		}
 
 			.about .image img {
-				width: 10em;
+				width: 6em;
 			}
 
 	}
 
 		.about .image {
 			border-color: #f76660;
-			border-width: .4em;
+			border-width: .0em;
 		}
 
 		#main .about .image {
+
 			border-color: #f76660;
 		}
 
@@ -4136,6 +4143,7 @@ input, select, textarea {
 		display: -moz-flex;
 		display: -webkit-flex;
 		display: -ms-flex;
+		padding: 2rem 4rem 2rem 4rem;
 		display: flex;
 		-moz-flex-wrap: wrap;
 		-webkit-flex-wrap: wrap;
@@ -5129,6 +5137,18 @@ input, select, textarea {
 }
 #main > section.WhatIDid h2 {
 	text-align: left;
+}
+#main > section.WhatIDid div {
+	display: flex;
+	margin-bottom: 2em;
+}
+
+#main > section.WhatIDid p {
+	margin-left: 2em;
+}
+
+#main > section.WhatIDid img {
+	margin-right: 2em;
 }
 
 		/* text-align: center;
