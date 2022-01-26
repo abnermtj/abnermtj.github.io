@@ -3895,7 +3895,7 @@ input, select, textarea {
 
 			#main > .posts > * {
 				padding: 8px;
-				width: 48.5%;
+				width: 45.5%;
 			}
 			
 			#main > .posts > article {
@@ -3905,13 +3905,15 @@ input, select, textarea {
 				border-top-width: 0px; /* for border between cards */
 				text-align: center;
 				transition: opacity 0.2s ease-in-out;
-				border: 6px solid rgb(246, 249, 252);
+				border: .5px solid rgb(209, 209, 209);
 				box-shadow: 0 0 3px #ccc;
 				margin-bottom: 2em;
 			}
 			
 			#main >.posts > article >  h2{
 				font-family: "Kiona Bold";
+				padding-top: .5em;
+				margin-bottom: .25em;
 			}
 				#main > .posts > article > :last-child {
 					margin-bottom: 0;
@@ -3919,13 +3921,17 @@ input, select, textarea {
 
 				#main > .posts > article:nth-child(2n -1) {
 					margin-right: auto;
-  					margin-left: 0;
-
+  					margin-left: 1em;
+  					border: 0 0 0 0;
+  					padding: 0 0 1em 0;
 				}
 
 				#main > .posts > article:nth-child(2n) {
-					margin-right: 0;
+					margin-right: 1em;
   					margin-left: auto;
+  					border: 0 0 0 0;
+  					padding: 0 0 1em 0;
+					  
 				}
 				#main > .posts > article .image:hover{
 					transition: opacity 0.2s ease-in-out;
@@ -3957,20 +3963,20 @@ input, select, textarea {
 				}
 
 				#main > .posts > article:nth-child(2n - 1) {
-					border-left-width: 2px;
+					border-left-width: 0px;
 				}
 
 				#main > .posts > article:nth-child(-n + 2) {
-					border-top-width: 2px;
+					border-top-width: 0px;
 				}
 
 				#main > .posts > article:nth-child(n) {
-					border-left-width: .5em;
-					border-right-width: .5em;
+					border-left-width: .0em;
+					border-right-width: .0em;
 				}
 
 				#main > .posts > article:nth-child(-n + 1) {
-					border-top-width: .5em;
+					border-top-width: .0em;
 				}
 
 				#main > .posts > article .image {
