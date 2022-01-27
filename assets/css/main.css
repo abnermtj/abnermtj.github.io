@@ -3310,7 +3310,7 @@ input, select, textarea {
 					line-height: 2.25em;
 					padding: 0 2em;
 					border: 0;
-					border-radius: 8px;
+					border-radius: 0px;
 					box-shadow: inset 0 0 0 1px transparent;
 				}
 
@@ -3369,7 +3369,7 @@ input, select, textarea {
 					width: 100%;
 					height: 5px;
 					background-color: #dfe2ea;
-					border-radius: 8px 8px 0 0;
+					border-radius: 0px 0px 0 0;
 					opacity: 0;
 					transition: 0.3s;
 			   }
@@ -5174,3 +5174,12 @@ input, select, textarea {
 		justify-content:center;
 		width:75%;
 	} */
+
+.responsive-image {
+  width: 100%;
+  height: 1.5em;
+}
+
+#nav.alt ul .personal-logo {
+	margin-right: 10em;
+}
