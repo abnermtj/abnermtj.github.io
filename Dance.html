@@ -55,7 +55,7 @@
 							<h2>Situation</h2>
 							The average engineer is not very proficient in dancing. To solve this catastrophe,
 							 our team wanted to prototype a small but powerful IoT device that can coach people like us to competency.
-							 At the same time, we wanted it to be comfortable and usable for a variety of dance moves and dancers.
+							 To do this, we extracted IMU data on the device and used this data to train a machine learning model on PyTorch to classify dance moves.
 						</p>
 					
 
@@ -65,14 +65,12 @@
 				<div id="main">
 					<section class="WhatIDidC main Cheruton">
 						<h2>What I did</h2>
-						<p> My role was primarily to establish a fast and stable Bluetooth 
-							Low Energy 4.0 communication protocol between an Arduino beetle and a computer running Ubuntu.
-							 Additionally, on the Arduino I helped to develop the reading of IMU and EMG sensors over UART and I2C in software and hardware. 
-							 The main challenges of my role were to balance power consumption with the networking performance of the links.
-							  Since We wanted immediate feedback on how well we performed a move and to do that, our device needed to be able to identify dance moves being 
-							  performed in real-time. However, our small device also had a small battery capacity, very power-hungry Bluetooth calls need to be carefully used. Additionally,
-							   our hardware moved quite vigorously during a dance, disconnections were frequent but quickly remedied by quick reconnection as we skipped Bluetooth pairing and
-							    cached Bluetooth information. The data collected over BLE is then processed and piped to our ML model to classify dance moves.
+						<p> I establish a Bluetooth Low Energy communication protocol between Arduino beetles and a computer running Ubuntu.
+							 It was was a challenge to balance power consumption on our small battery with the networking performance of the link. 
+							 It was expensive to always leave every device module on. 
+
+							<br> <br>
+							 Additionally, I helped to develop the reading of IMU and EMG sensors over UART and I2C. 
 
 						</thead> 
 							<br><br></p>
