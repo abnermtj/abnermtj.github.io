@@ -1,0 +1,101 @@
+<!DOCTYPE HTML>
+<!--
+	Stellar by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+    <title>Abner Morales Tolentino Jr</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+</head>
+
+<body class="is-preload">
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+        <!-- Nav -->
+
+        <nav id="nav">
+            <ul class="icons">
+                <li><img src="images/logo.png" class="icon responsive-image"><span class="label"></span></a>
+                </li>
+            </ul>
+            <ul class="links">
+                <li><a href="index.html" class="nav-item is-active" active-color="#f76660">Projects</a></li>
+                <li><a href="https://abnermtj.carrd.co/#gallery" class="nav-item" active-color="#f76660">Illustrations</a></li>
+                <li><a href="about.html" class="nav-item" active-color="#f76660">About</a></li>
+                <li><a href="#jump" class="nav-item" active-color="#f76660">Contact me</a></li>
+                <li><a href="images/Resume_Tolentino_Abner_Jr_Morales.pdf" target="_blank" class="nav-item" active-color="#f76660">Resume</a></li>
+                <span class="nav-indicator"></span>
+            </ul>
+
+        </nav>
+        <!-- Main -->
+        <div id="main">
+            <!-- Introduction -->
+            <section id="intro" class="main">
+                <div class="spotlight">
+                    <div class="content">
+                        <header class="major">
+                            <h2> <br>Project Summary</h2>
+                        </header>
+                        <span class="image" style="display: inline"><img style="float:right; width:45%; display: flex; margin-left: 4em; margin-right: 0em; margin-bottom: 0em;"src="images/Controller/plan.png" alt="" /></span>
+                        <p>
+                            <b>Languages</b>: C/C++, C# <br>
+                            <b>Tech</b>: Blender, Unity <br>
+
+                            <b>Timeline</b>: Feb 2023<br>
+
+                            <b>Role</b>: Engineer<br>
+
+                            <b>Team Size</b>: 1<br>
+
+                            <h2>Situation</h2>
+                            I want to make a photo taking game in VR. So a controller to mimic holding an actual camera would hopefully feel great for players!
+                        </p>
+
+                        <ul class="actions special">
+                            <li><a href="https://github.com/abnermtj/CS4240CameraContoller" class="button">GitHub</a></li>
+                        </ul>
+
+                    </div>
+            </section>
+            </div>
+            <div id="main">
+                <section class="WhatIDidC main Cheruton">
+                    <h2>What I did</h2>
+                    <p>
+                        I used a WeMos-D1R2 as the microcontroller for this device. <br><br>
+                        <b>Creating the Chassis</b>: I create the chassis for all the hardware using a mixture of 3d Printing and cardboard when I got lazy. Solder, Duct tape, drill holes and screw all the components and voila the hardware is done.<br><br>
+
+                        <b>Initial Plan:</b> Camera bodies are huge and bulky so I had a lot of space and freedom to layout the internals. I grabbed parts from previous projects already and bought a vibration module to add Haptic feed back when zooming
+                        in and out. One consideration was to ensure the product's center of mass was exactly at the center of the box. So i added weight around the chassis to make it balanced.<br> <br>
+
+                        <b>Link To Unity:</b> Once everything was hooked up, I setup the initial code to enable wifi, buttons, LEDs, vibrations on the WeMos. Then I setup a TCP connection between the WeMos and my computer to send a bool and an int as
+                        a packet to Unity which has a thread for processing and updating internal values on packet receive. It is now complete!
+                        <br><br></p>
+                    <!-- Content -->
+                </section>
+            </div>
+
+            <a id="jump"></a>
+            <div id="footer"></div>
+        </div>
+
+        <!-- Scripts -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/jquery.scrollex.min.js"></script>
+        <script src="assets/js/jquery.scrolly.min.js"></script>
+        <script src="assets/js/browser.min.js"></script>
+        <script src="assets/js/breakpoints.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
+        <script src="assets/js/snake.js"></script>
+</body>
+
+</html>
